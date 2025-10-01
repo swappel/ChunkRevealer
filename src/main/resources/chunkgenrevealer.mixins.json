@@ -4,6 +4,8 @@
   "package": "de.swappel.chunkGenRevealer.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "ProgressScreenMixin",
+    "MinecraftClientMixin"
   ],
   "client": [
   ],
