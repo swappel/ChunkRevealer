@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "chunkgenrevealer",
+  "version": "${version}",
+  "name": "ChunkGenRevealer",
+  "description": "This mod lets you witness the generation of all of the world with your own eyes with you being able to step through att your own pace.",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/chunkgenrevealer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "de.swappel.chunkGenRevealer.client.ChunkGenRevealerDataGenerator"
+    ],
+    "client": [
+      "de.swappel.chunkGenRevealer.client.ChunkGenRevealerClient"
+    ],
+    "main": [
+      "de.swappel.chunkGenRevealer.ChunkGenRevealer"
+    ]
+  },
+  "mixins": [
+    "chunkgenrevealer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
